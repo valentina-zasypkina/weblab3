@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratornaya 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="visit">
+            <h1 id="top">Визитная карточка</h1>
+        </div>
+
+        <div class="link">
+            <h2>Навигация</h2>
+            <nav>
+                <a href="#1">О себе</a>  |
+                <a href="#2">Мои навыки</a>  |
+                <a href="#3">Любимые сайты</a>  |
+                <a href="#4">Моя группа</a>  |
+                <a href="#5">Управление таблицей</a>  |
+                <a href="#6">Слайдер</a>
+            </nav>
+        </div>
+        <section class="section" id="1">
+            <h2>О себе</h2>
+            <div class="MEE">
+                <img src="image/25.05.24.jpg" alt="фотка моя">
+                <p>
+                    Меня зовут Валентина, мне 19 лет. В данный момент учусь на воторм курсе по направлению "Информационные системы и технологии".
+                    <br><br>Окончила 11 классов средней школы №63. Также закончила художественную и хорографическую школы.
+                    <br><br>Увлекаюсь творчеством, по началу хотела идти в архитектурный университет, но так сложилась судьба и я поступила в ОмГТУ.
+                    Мне нравится смотреть фильмы и сериалы,слушать музыку, читать книги, гулять и общаться со своими друзьями. Мой самый любимый фильм - <b>Джон Уик</b>. И я очень люблю актера, который его играет - <b>Киану Ривза</b>.
+                    В будущем хочу стать высококвалифицироавнным и компетентным специалистом в выбранной мной области.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="2">
+            <h2>Мои навыки</h2>
+            <div class="skills">
+                <p>
+                    К настоящему моменту я владею следующими навыками:
+                    <ul class="proga">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Figma</li>
+                        <li>Visual Studio Code</li>
+                        <li>Xisual Studio 2022</li>
+                        <li>Oracle Virtual Box</li>
+                    </ul>
+                    <p>Языки программирования:</p>
+                    <ul class="lang">
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                    <p>Остальные навыки:</p>
+                    <ul class="skill">
+                        <li>Рисование</li>
+                        <li>Моделирование</li>
+                        <li>Дизайн</li>
+                        <li>Плавание</li>
+                        <li>Танцы</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section class="section" id="3">
+            <h2>Любимые сайты</h2>
+            <div class="lovely">
+                <p>
+                    <br><br><a href="valechka_zasypkia@mail.ru">Email</a> - Напишите мне на электронную почту
+                    <br><br><a target="_blank" href="https://vk.com/feed">VK</a> - Социальная сеть из России, где пользователи могут общаться, делиться контентом, публиковать фотографии, видео и вести блоги.
+                    <br><br><a target="_blank" href="https://ru.pinterest.com/">Pinterest</a> -  Платформа для поиска и сохранения идей, таких как рецепты, декор, мода и проекты. 
+                    Пользователи могут создавать виртуальные доски для хранения и организации своих находок.
+                    <br><br><a target="_blank" href="https://www.youtube.com/">YouTube</a> - Платформа для обмена видео, где пользователи могут смотреть, загружать, комментировать и оценивать видео, 
+                    а также подписываться на каналы.
+                    <br><br><a target="_blank" href="https://www.kinopoisk.ru/">Кинопоиск</a> - русскоязычный интернет-сервис, посвящённый кинематографу. Основан 7 ноября 2003 года Виталием Тацием и Дмитрием Сухановым. С 2013 года принадлежит компании «Яндекс».
+                    <br><br><a target="_blank" href="https://music.yandex.ru/">Яндекс Музыка</a> - музыкальный стриминговый сервис, разработанный компанией «Яндекс». Запущен в 2010 году.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="4">
+            <h2>Моя группа</h2>
+            <div class="group">
+                <table id="MyTable">
+                    <tr>
+                        <th>ФИО</th>
+                        <th>Время года</th>
+                        <th>Возраст</th>
+                        <th>Любимое блюдо</th>
+                        <th>Телефон</th>
+                        <th>Почта</th>
+                        <th>Действие</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="section" id="5">
+            <h2>Управление таблицей</h2>
+            <div class="form-container">
+                <form id="dataForm">
+                    <div class="form-group">
+                        <label for="fio">ФИО:</label>
+                        <input type="text" id="fio" name="fio" required>
+                        <div class="error-message" id="fio-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="season">Время года:</label>
+                        <input type="text" id="season" name="season" required>
+                        <div class="error-message" id="season-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Возраст:</label>
+                        <input type="number" id="age" name="age" required>
+                        <div class="error-message" id="age-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dish">Любимое блюдо:</label>
+                        <input type="text" id="dish" name="dish" required>
+                        <div class="error-message" id="dish-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Почта:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="6">
+            <h2>Слайдер с картинками</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="image/слайд1.jpg" alt="Слайд 1"></div>
+                    <div class="slide"><img src="image/слайд2.jpg" alt="Слайд 2"></div>
+                    <div class="slide"><img src="image/слайд3.jpg" alt="Слайд 3"></div>
+                    <div class="slide"><img src="image/слайд4.jpg" alt="Слайд 4"></div>
+                    <div class="slide"><img src="image/слайд5.jpg" alt="Слайд 5"></div>
+                </div>
+
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+
+                <div class="slider-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="bottom">
+            <a href="#top">Наверх↑</a>
+        </div>
+    </div>
+    <script>
+        // Инициализация данных таблицы
+        let tableData = [
+            {
+                fio: "Засыпкина Валентина Михайловна",
+                season: "Весна",
+                age: 19,
+                dish: "Шашлык",
+                email: "valechka_zasypkina@mail.ru",
+                phone: "+7 (913) 150-20-80"
+            },
+            {
+                fio: "Долгова Анна Станиславовна",
+                season: "Весна",
+                age: 21,
+                dish: "Фунчоза",
+                email: "anna-dolgova@gmail.com",
+                phone: "+7 (904) 079-39-61"
+            },
+            {
+                fio: "Давидович Елена Валерьевна",
+                season: "Лето",
+                age: 19,
+                dish: "Пицца",
+                email: "lndavidovich@gmail.com",
+                phone: "+7 (922) 065-54-16"
+            },
+            {
+                fio: "Васильев Тимофей Евгеньевич",
+                season: "Зима",
+                age: 19,
+                dish: "Шашлык",
+                email: "timofevasilyev@gmail.com",
+                phone: "+7 (950) 337-52-46"
+            },
+            {
+                fio: "Ефимов Сергей Александрович",
+                season: "Зима",
+                age: 19,
+                dish: "Ореховый буше",
+                email: "efimovsergey@mail.ru",
+                phone: "+7 (950) 950-31-90"
+            }
+        ];
+
+        // Загрузка данных из localStorage
+        function loadTableData() {
+            const savedData = localStorage.getItem('tableData');
+            if (savedData) {
+                tableData = JSON.parse(savedData);
+            }
+            renderTable();
+        }
+
+        // Сохранение данных в localStorage
+        function saveTableData() {
+            localStorage.setItem('tableData', JSON.stringify(tableData));
+        }
+
+        // Отрисовка таблицы
+        function renderTable() {
+            const table = document.getElementById('MyTable');
+            // Очищаем таблицу, кроме заголовка
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+            
+            // Добавляем строки с данными
+            tableData.forEach((row, index) => {
+                const newRow = table.insertRow();
+                newRow.insertCell(0).textContent = row.fio;
+                newRow.insertCell(1).textContent = row.season;
+                newRow.insertCell(2).textContent = row.age;
+                newRow.insertCell(3).textContent = row.dish;
+                
+                const phoneCell = newRow.insertCell(4);
+                const phoneLink = document.createElement('a');
+                phoneLink.href = `tel:${row.phone}`;
+                phoneLink.textContent = row.phone;
+                phoneCell.appendChild(phoneLink);
+                
+                const emailCell = newRow.insertCell(5);
+                const emailLink = document.createElement('a');
+                emailLink.href = `mailto:${row.email}`;
+                emailLink.textContent = row.email;
+                emailCell.appendChild(emailLink);
+                
+                const actionCell = newRow.insertCell(6);
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Удалить';
+                deleteBtn.className = 'delete-btn';
+                deleteBtn.onclick = () => deleteRow(index);
+                actionCell.appendChild(deleteBtn);
+            });
+        }
+
+        // Удаление строки
+        function deleteRow(index) {
+            tableData.splice(index, 1);
+            saveTableData();
+            renderTable();
+        }
+
+        // Валидация формы
+        function validateForm(formData) {
+            let isValid = true;
+            const errors = {};
+            
+            // Проверка на пустые поля
+            Object.keys(formData).forEach(key => {
+                if (!formData[key].trim()) {
+                    errors[key] = 'Это поле обязательно для заполнения';
+                    isValid = false;
+                }
+            });
+            
+            // Проверка email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (formData.email && !emailRegex.test(formData.email)) {
+                errors.email = 'Введите корректный email адрес';
+                isValid = false;
+            }
+            
+            // Проверка телефона
+            const phoneRegex = /^\+7\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2}$/;
+            if (formData.phone && !phoneRegex.test(formData.phone)) {
+                errors.phone = 'Телефон должен быть в формате +7 (XXX) XXX-XX-XX';
+                isValid = false;
+            }
+            
+            return { isValid, errors };
+        }
+
+        // Обработка отправки формы
+        document.getElementById('dataForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Собираем данные формы
+            const formData = {
+                fio: document.getElementById('fio').value,
+                season: document.getElementById('season').value,
+                age: document.getElementById('age').value,
+                dish: document.getElementById('dish').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value
+            };
+            
+            // Валидация
+            const { isValid, errors } = validateForm(formData);
+            
+            // Очистка предыдущих ошибок
+            document.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            
+            if (isValid) {
+                // Добавление новой строки
+                tableData.push(formData);
+                saveTableData();
+                renderTable();
+                
+                // Очистка формы
+                this.reset();
+            } else {
+                // Показ ошибок
+                Object.keys(errors).forEach(key => {
+                    const input = document.getElementById(key);
+                    const errorElement = document.getElementById(`${key}-error`);
+                    
+                    input.classList.add('error');
+                    errorElement.textContent = errors[key];
+                });
+            }
+        });
+
+        // === СЛАЙДЕР С КАРТИНКАМИ (исправленный) ===
+        let currentSlide = 0;
+        const slidesContainer = document.querySelector('.slider'); // элемент, который сдвигаем
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const totalSlides = slides.length;
+        let slideInterval = null;
+        const AUTOPLAY_DELAY = 5000; // 5 секунд
+        
+        function goToSlide(index) {
+            // корректируем индекс (цикличность)
+            currentSlide = (index + totalSlides) % totalSlides;
+            // сдвигаем на 100% * индекс
+            slidesContainer.style.transform = `translateX(${-currentSlide * 100}%)`;
+            updateIndicators();
+        }
+        
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            goToSlide(currentSlide - 1);
+        }
+        
+        function updateIndicators() {
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === currentSlide);
+            });
+        }
+        
+        function startAutoSlide() {
+            stopAutoSlide();
+            slideInterval = setInterval(nextSlide, AUTOPLAY_DELAY);
+        }
+        
+        function stopAutoSlide() {
+            if (slideInterval) {
+                clearInterval(slideInterval);
+                slideInterval = null;
+            }
+        }
+        
+        function resetAutoSlide() {
+            startAutoSlide();
+        }
+        
+        prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+        nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+        indicators.forEach((ind, i) => ind.addEventListener('click', () => { goToSlide(i); resetAutoSlide(); }));
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTableData();
+            slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+            goToSlide(0);
+            startAutoSlide();
+        });
+    </script>
+</body>
+</html>

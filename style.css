@@ -1,0 +1,348 @@
+body {
+    background-color: rgb(143, 189, 231);
+    margin: 40px;
+    font-family: cursive;
+}
+
+/* Контейнер для центрирования всей страницы */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 12px;
+}
+
+h2 {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+nav{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Отделение разделов друг от друга */
+.section {
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+/* Центрирование блоков с выравниванием по ширине */
+.skills{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.MEE{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.MEE img {
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+}
+
+.lovely{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+
+}
+
+.group{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.proga{
+    font-size: 20px;
+    list-style-type: "◆ ";
+}
+
+.lang{
+    font-size: 20px;
+    list-style-type: "▢ ";
+}
+
+.skill{
+    font-size: 20px;
+    list-style-type: "▶ ";
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.bottom {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Стили для формы */
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    height: 500px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background-color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Индикаторы слайдов */
+.slider-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Анимация для слайдов */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+    .MEE {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .MEE img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 6px;
+    }
+    
+    .slider-container {
+        height: 400px;
+    }
+    
+    .slide img {
+        height: 250px;
+    }
+    
+    .slider-btn {
+        padding: 12px 16px;
+        font-size: 18px;
+    }
+    
+    .slide h3 {
+        font-size: 20px;
+    }
+    
+    .slide p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 350px;
+    }
+    
+    .slide img {
+        height: 200px;
+    }
+    
+    .slider-btn {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+    
+    .slider-indicators {
+        bottom: 10px;
+    }
+    
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+}
